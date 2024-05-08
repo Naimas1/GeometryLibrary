@@ -1,10 +1,22 @@
-﻿namespace GeometryLibrary
+using System;
+
+namespace GeometryLibrary
 {
-    internal class Program
+    public static class GeometryCalculator
     {
-        static void Main(string[] args)
+        public static double CalculateSquareArea(double side)
         {
-            Console.WriteLine("Hello, World!");
+            return side * side;
+        }
+
+        public static double CalculateRectangleArea(double length, double width)
+        {
+            return length * width;
+        }
+
+        public static double CalculateTriangleArea(double @base, double height)
+        {
+            return 0.5 * @base * height;
         }
     }
 }
